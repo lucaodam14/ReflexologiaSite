@@ -1,0 +1,158 @@
+/*Geral*/
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+}
+
+body{
+    background: #F5F5DC;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Menu de Navegação*/
+nav.menu {
+    margin: 0px;
+    width: 100vw;
+    background-color: #8fbc8f;
+}
+
+nav.menu ul {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.menu ul li {
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+nav.menu ul li a{
+    color: rgb(3, 47, 86);
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.menu ul ul {
+    background-color: #8fbc8f;
+    display: none;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+nav.menu ul ul{
+    border-radius: 15px;
+}
+
+nav.menu ul ul li{
+    border-radius: 15px;
+}
+
+nav.menu ul li:hover {
+    transition: 0.5s;
+    background-color: #98ff98;
+}
+
+nav.menu ul li:hover > ul {
+    display: block;
+}
+
+/*Rodapé*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #8fbc8f;
+}
+
+/*Conteúdo da página*/
+section.conteudo, 
+section.introducao,
+section.formacao{
+    margin: 20px;
+    background-color: #add8e6;
+    color: #2f4f4f;
+    border-radius: 15px;
+    flex: 1;
+}
+  
+section.conteudo h1,
+section.introducao h1,
+section.formacao h1{
+    text-align: center;
+}
+
+section.conteudo h2,
+section.introducao h2,
+section.formacao h2{
+    margin: 10px 0px 0px 10px;
+}
+
+section.conteudo p, 
+section.introducao p,
+section.formacao p{
+    display: flex;
+    margin: 10px;
+}
+
+section.conteudo li,
+section.formacao li{
+    margin: 10px 0px 10px 40px;
+}
+
+
+.img-mapa {
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.img-mapa img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
+
+.img-mapa h5 {
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+}
+
+
+
+/*Página de fórmulário enviado*/
+.enviado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
